@@ -12,3 +12,4 @@ Download the right Docker image(s) using `docker pull`, like so:
 
 `docker pull lambci/lambda:nodejs6.10`
 
+You may want to substitute nodejs6.10 with nodejs4.3, depending on your preferences.
