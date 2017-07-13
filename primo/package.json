@@ -1,0 +1,30 @@
+{
+  "name": "primo",
+  "version": "0.0.1",
+  "description": "Primary lambda, to invoke the secondary one",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dry-run": "node-lambda run",
+    "deploy": "node-lambda deploy --configFile deploy.env",
+    "setup": "node-lambda setup",
+    "package": "node-lambda package",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "pretest": "npm run lint --silent"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Sandyman/solid-succotash.git"
+  },
+  "author": "Sander Huijsen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sandyman/solid-succotash/issues"
+  },
+  "homepage": "https://github.com/Sandyman/solid-succotash#readme",
+  "devDependencies": {
+    "aws-sdk": "^2.83.0",
+    "node-lambda": "^0.11.3"
+  }
+}
